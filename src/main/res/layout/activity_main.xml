@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/decha"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="10sp"
+            >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:src="@drawable/logo"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="50dp" />
+
+            <Button
+                android:layout_weight="0.5"
+                android:id="@+id/menuButton"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="50sp"
+                android:text="@string/menu"
+                android:textAllCaps="true"
+                android:textSize="50sp"
+                app:backgroundTint="@null"
+                android:background="#20FFFFFF"
+                android:textColor="@color/white"
+                android:shadowColor="#55000000"
+                android:shadowDx="6"
+                android:shadowDy="6"
+                android:shadowRadius="6"
+                />
+
+            <Button
+                android:layout_weight="0.5"
+                android:id="@+id/dowoz"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="50sp"
+                android:background="#20FFFFFF"
+                android:text="@string/dowoz"
+                android:textAllCaps="true"
+                android:textSize="50sp"
+                app:backgroundTint="@null"
+                android:textColor="@color/white"
+                android:shadowColor="#55000000"
+                android:shadowDx="6"
+                android:shadowDy="6"
+                android:shadowRadius="6"/>
+
+            <Button
+                android:layout_weight="0.5"
+                android:id="@+id/odbior"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="50sp"
+                android:background="#20FFFFFF"
+                android:text="@string/odbior"
+                android:textAllCaps="true"
+                android:textSize="50sp"
+                app:backgroundTint="@null"
+                android:textColor="@color/white"
+                android:shadowColor="#55000000"
+                android:shadowDx="6"
+                android:shadowDy="6"
+                android:shadowRadius="6"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

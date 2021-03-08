@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/decha"
+    tools:context=".CartActivity"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15sp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:layout_weight="0.95"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="10sp"
+            android:layout_weight="0.3"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:background="#20FFFFFF"
+                android:textColor="@color/white"
+                android:shadowColor="#55000000"
+                android:shadowDx="6"
+                android:shadowDy="6"
+                android:shadowRadius="6"
+                android:id="@+id/totalPrice"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:layout_marginTop="10sp"
+                android:text="@string/dowoz"
+                ></TextView>
+
+           </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <Switch
+                android:id="@+id/dowoz"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.7"
+                android:background="#20FFFFFF"
+                android:shadowColor="#55000000"
+                android:shadowDx="6"
+                android:shadowDy="6"
+                android:shadowRadius="6"
+                android:text="Dowóz"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                app:backgroundTint="@null"
+                android:checked="true"/>
+            <Button
+                android:id="@+id/zamow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="@string/zamow"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                app:backgroundTint="@null"
+                android:background="#20FFFFFF"
+                android:textColor="@color/white"
+                android:shadowColor="#55000000"
+                android:shadowDx="6"
+                android:shadowDy="6"
+                android:shadowRadius="6"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
